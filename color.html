@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="color.css">
+    <title>ColorGrid</title>
+</head>
+
+<body>
+    <h1 class="title">Color Grid</h1>
+
+    <!-- form fields as requested in the description of the assignment -->
+    <form id="gridForm">
+
+        <label for="userDimensions"> Please enter the number of blocks: (1-400):</label>
+
+        <input type="number" id="userDimensions" min="1" max="400" required> 
+
+        <button type="submit">Generate Grid</button>
+
+    </form> 
+    
+    <div class="grid-container"></div>
+    <script src="color.js"></script>
+
+    </body>
+</html>

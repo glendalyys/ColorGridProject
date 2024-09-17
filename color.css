@@ -1,0 +1,32 @@
+
+.grid-container {
+
+    position: relative; 
+
+    display: grid;
+
+    /* rolling over the user dimensions from JS that we prompted the user for */ 
+
+    grid-template-rows: repeat(var(--user-dimensions), 1fr);
+
+    grid-template-columns: repeat(var(--user-dimensions), 1fr);
+
+    border: 2px solid whitesmoke;
+
+	/* dynamic design to adjust to the view of any device */ 
+	
+    width: 100%; 
+
+    aspect-ratio: 1/1;
+
+    max-width: 100vh; 
+
+
+  }
+
+
+.grid-container .cell{
+
+    border: 1px solid black; 
+
+}
